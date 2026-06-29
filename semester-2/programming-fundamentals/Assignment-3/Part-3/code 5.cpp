@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int getLength(char arr[]);
+
+int main()
+{
+    char name[] = "Student";
+    
+    cout << getLength(name);
+    
+    
+    return 0;
+}
+
+int getLength(char arr[])
+{
+    int length = 0;
+    
+    for (int i = 0; arr[i] != '\0'; i++)
+    {
+        length++;
+    }
+    
+    return length;
+}
